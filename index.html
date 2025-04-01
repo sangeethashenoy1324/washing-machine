@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing Machine Store</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007BFF;
+            padding: 20px;
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .logo-text {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-text img {
+            height: 80px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px 20px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background: white;
+            padding: 20px;
+			border: 2px solid #0056b3;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .buy-btn {
+            display: block;
+            padding: 10px 20px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .about, .contact {
+            text-align: center;
+            padding: 40px;
+            background: #007BFF;
+            color: white;
+        }
+        .about h2, .contact h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-text">
+            <img src="https://img.freepik.com/free-vector/washing-machine-cartoon-vector-icon-illustration-object-technology-icon-concept-isolated-premium_138676-4690.jpg?ga=GA1.1.715169509.1743523151&semt=ais_hybrid" alt="Washing Machine Store Logo">
+            <span>Washing Machine Store</span>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>Discover the best washing machines for your home with top-notch features and efficiency.</p>
+		<p>Your one-stop store for high-quality washing machines and laundry solutions.</p>
+    </div>
+    <div class="container" id="products">
+        <h2>🛒 Our Washing Machines Products 🛒</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz8jjorWjweKl0IiejaqVRzaqN43TNFQJ_dg&s" alt="Front Load Washing Machine">
+                <h3>Front Loading Washing Machine</h3>
+                <p>High efficiency and water-saving design.</p>
+                <p>💰 Price: ₹25,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://img.freepik.com/premium-photo/elegant-images-washing-machines-essentials_1263741-19500.jpg?ga=GA1.1.715169509.1743523151&semt=ais_hybrid" alt="Top Load Washing Machine">
+                <h3>Top Loading Washing Machine</h3>
+                <p>Easy to use and powerful cleaning process.</p>
+                <p>💰 Price: ₹18,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://img.freepik.com/premium-photo/activator-washing-machine-white-background-two-image-positions_508835-6788.jpg?ga=GA1.1.715169509.1743523151&semt=ais_hybrid" alt="Semi-Automatic Washing Machine">
+                <h3>Semi-Automatic Washing Machine</h3>
+                <p>Affordable and reliable for everyday use.</p>
+                <p>💰 Price: ₹12,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@washingstore.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </div>
+</body>
+</html>
